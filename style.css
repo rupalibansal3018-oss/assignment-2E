@@ -1,0 +1,97 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* BOX MODEL: Ensures padding & borders don't increase element width */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login Card Container (Box Model & Borders) */
+.login-container {
+    background-color: #ffffff;
+    width: 380px;                    /* Width requirement */
+    padding: 35px 30px;              /* Padding requirement */
+    border: 1px solid #dcdde1;       /* Border requirement */
+    border-radius: 10px;             /* Smooth curved borders */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.login-container h2 {
+    color: #2f3640;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #718093;
+    font-size: 14px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Input Group Layout */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2f3640;
+    margin-bottom: 6px;
+}
+
+/* Input Fields Styling (Box Model, Width/Height, Borders) */
+.input-group input {
+    width: 100%;                     /* Full width of container */
+    height: 45px;                    /* Explicit Height requirement */
+    padding: 0 15px;                 /* Inner padding */
+    border: 2px solid #ced6e0;       /* Initial Border */
+    border-radius: 6px;              /* Rounded border */
+    font-size: 15px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease; /* TRANSITION: Smooth border color change on focus */
+}
+
+/* Focus state for inputs */
+.input-group input:focus {
+    border-color: #3498db;           /* Changes border color when clicked */
+}
+
+/* Submit Button (Padding, Width, and Hover Animation) */
+.btn-submit {
+    width: 100%;                     /* Full width button */
+    height: 45px;                    /* Explicit Height */
+    background-color: #3498db;       /* Primary button color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;                    /* No default border */
+    border-radius: 6px;              /* Rounded corners */
+    cursor: pointer;
+    
+    /* TRANSITION REQUIREMENT: Smooth animation on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Button Hover Animation (TRANSITIONS) */
+.btn-submit:hover {
+    background-color: #2980b9;       /* Darker shade on hover */
+    transform: translateY(-2px);     /* Slight upward lifting effect */
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4); /* Glow/shadow animation */
+}
+
+/* Button Active Effect when clicked */
+.btn-submit:active {
+    transform: translateY(0);        /* Press down effect */
+}
